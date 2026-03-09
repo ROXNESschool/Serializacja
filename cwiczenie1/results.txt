@@ -1,0 +1,30 @@
+Ćwiczenie1:
+{"imie":"Jan Kowalski","wiek":22,"kierunek":"Informatyka","hobby":["Programowanie","Gry","Filmy"]}
+Ćwiczenie2:
+Exception in thread "main" com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `org.example.Student` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (String)"{
+  "imie":"Anna",
+  "wiek":21,
+  "kierunek":"Matematyka",
+  "hobby":["Czytanie","Szachy"]
+}
+"; line: 2, column: 3]
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1915)
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:414)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1360)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1424)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:352)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:185)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4825)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3772)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3740)
+	at org.example.Deserialization.main(Deserialization.java:20)
+Ćwiczenie3:
+{
+  "imie" : "Marek",
+  "wiek" : 23,
+  "kierunek" : "Fizyka",
+  "hobby" : [ "Astronomia", "Programowanie" ]
+}
